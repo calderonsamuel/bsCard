@@ -1,7 +1,7 @@
 # (uncomment to add a dependency)
 dependencies:
  - name: bscard
-   version: 0.1.0
+   version: 0.0.0.9000
    src: htmlwidgets
    script: bscard.js
    # stylesheet:
