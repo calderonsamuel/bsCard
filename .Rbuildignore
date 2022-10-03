@@ -2,3 +2,4 @@
 ^renv\.lock$
 ^bsCard\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
