@@ -13,7 +13,7 @@ bscard2 <- function(elementId = NULL) {
         
     )
     
-    tagList(
+    shiny::tagList(
         bscard_template(elementId = elementId),
         bscard_dep
     )
