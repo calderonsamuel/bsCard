@@ -13,8 +13,10 @@ bscard2 <- function(elementId = NULL) {
         
     )
     
-    shiny::tagList(
+    tag <- shiny::tagList(
         bscard_template(elementId = elementId),
         bscard_dep
     )
+    
+    htmltools::browsable(tag)
 }
