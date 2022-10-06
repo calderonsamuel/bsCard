@@ -29,7 +29,7 @@ function cardBodyGlobalListener() {
     console.log("working?")
 }
 
-$(document).on('shiny:connected', function(event) {
+document.addEventListener('shiny:connected', function(event) {
     cardBodyGlobalListener()
-});
+})
 
