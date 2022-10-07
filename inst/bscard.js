@@ -25,11 +25,18 @@ function listenForCardBodyToggle(el) {
 
 function cardBodyGlobalListener() {
     const cardHeaderToggles = document.getElementsByClassName('card-header-toggle')
-    cardHeaderToggles.forEach(listenForCardBodyToggle)
-    console.log("working?")
+    // console.log(cardHeaderToggles)
+    
+    for (const child of cardHeaderToggles) {
+        listenForCardBodyToggle(child)
+    }
 }
 
 document.addEventListener('shiny:connected', function(event) {
+    cardBodyGlobalListener()
+})
+
+window.addEventListener('load', function(event) {
     cardBodyGlobalListener()
 })
 
