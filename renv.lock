@@ -48,15 +48,17 @@
       "RemoteUsername": "rstudio",
       "RemoteRepo": "bslib",
       "RemoteRef": "dev",
-      "RemoteSha": "0ad454c195b803829f33f3bc8aec720cc0da08e7",
+      "RemoteSha": "b8c96dd62af0ae796b2ff01f289751711e1e5abc",
       "Remotes": "rstudio/bsicons, ramnathv/htmlwidgets",
-      "Hash": "b6f402a14a5597e266f8a7d17950a739",
+      "Hash": "ac232ef2d5c93d24275017b4d8078429",
       "Requirements": [
+        "base64enc",
         "cachem",
         "htmltools",
         "jquerylib",
         "jsonlite",
         "memoise",
+        "mime",
         "rlang",
         "sass"
       ]
@@ -206,18 +208,6 @@
         "digest",
         "fastmap",
         "rlang"
-      ]
-    },
-    "htmlwidgets": {
-      "Package": "htmlwidgets",
-      "Version": "1.5.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "76147821cd3fcd8c4b04e1ef0498e7fb",
-      "Requirements": [
-        "htmltools",
-        "jsonlite",
-        "yaml"
       ]
     },
     "httpuv": {
@@ -481,20 +471,6 @@
       "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
       "RemoteSha": "1.8-4",
       "Hash": "b8acdf8af494d9ec19ccb2481a9b11c2",
-      "Requirements": []
-    },
-    "yaml": {
-      "Package": "yaml",
-      "Version": "2.3.5",
-      "Source": "CRAN",
-      "Repository": "CRAN",
-      "RemoteType": "standard",
-      "RemotePkgRef": "yaml",
-      "RemoteRef": "yaml",
-      "RemoteRepos": "https://cran.rstudio.com/",
-      "RemotePkgPlatform": "x86_64-w64-mingw32",
-      "RemoteSha": "2.3.5",
-      "Hash": "458bb38374d73bf83b1bb85e353da200",
       "Requirements": []
     }
   }

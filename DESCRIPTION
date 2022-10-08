@@ -11,7 +11,6 @@ BugReports: https://github.com/calderonsamuel/bsCard/issues
 Imports: 
     bslib (>= 0.4.0.9000),
     htmltools,
-    htmlwidgets,
     shiny
 Remotes: 
     rstudio/bslib@0ad454c

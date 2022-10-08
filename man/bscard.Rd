@@ -2,10 +2,16 @@
 % Please edit documentation in R/bscard.R
 \name{bscard}
 \alias{bscard}
-\title{Bootstrap Card}
+\title{Second iteration of bscard}
 \usage{
-bscard(width = NULL, height = NULL, elementId = NULL)
+bscard(elementId = NULL)
+}
+\arguments{
+\item{elementId}{id}
+}
+\value{
+shiny.tag
 }
 \description{
-Card compatible with BS version 5. Imitates the behavior of the Bs4Dash::box.
+Second iteration of bscard
 }
