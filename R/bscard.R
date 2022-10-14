@@ -9,7 +9,7 @@ task_card <- function(elementId = NULL) {
         name = "taskCard", 
         version = "0.0.0.9000", 
         src = system.file(package = "bsCard"), 
-        script = "bscard.js"
+        script = "taskCard.js"
         
     )
     
