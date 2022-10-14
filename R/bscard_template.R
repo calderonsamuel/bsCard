@@ -38,6 +38,6 @@ inline_description <- function(icon_name, label) {
         style = "display: grid; grid-template-columns: 20px auto; gap: 5px; width: 100%;",
         tags$div(tags$p(bs_icon(icon_name, size = "1.1rem"), style = "margin-bottom: 0rem; text-align: left;")),
         tags$div(tags$p(label, style = "margin-bottom: 0rem; text-align: left;"))
-    )|> suppressMessages()
+    )
 }
 
