@@ -9,9 +9,9 @@ License: MIT + file LICENSE
 URL: https://github.com/calderonsamuel/bsCard
 BugReports: https://github.com/calderonsamuel/bsCard/issues
 Imports: 
+    bsicons,
     bslib (>= 0.4.0.9000),
-    htmltools,
-    shiny
+    htmltools
 Remotes: 
     rstudio/bslib@0ad454c
 Encoding: UTF-8

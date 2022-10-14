@@ -2,3 +2,8 @@
 
 export(bscard)
 export(bscard_template)
+import(htmltools)
+importFrom(bsicons,bs_icon)
+importFrom(bslib,card)
+importFrom(bslib,card_body)
+importFrom(bslib,card_header)
