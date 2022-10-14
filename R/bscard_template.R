@@ -37,7 +37,6 @@ task_card_template <- function(elementId = NULL,
             )
         ),
         card_body(
-            gap = 0,
             class = "card-body-for-toggle",
             style = "display: none !important;",
             inline_description("person", assignee),
