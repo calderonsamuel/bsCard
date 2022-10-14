@@ -13,7 +13,8 @@ Imports:
     bslib (>= 0.4.0.9000),
     cli,
     htmltools,
-    ids
+    ids,
+    sortable
 Remotes: 
     rstudio/bslib@0ad454c
 Encoding: UTF-8
