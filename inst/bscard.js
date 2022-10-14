@@ -1,11 +1,11 @@
-let toggleCardBody = (elementId) => {
+let toggleCardBody = (el) => {
     
-    let cardHeader = document.getElementById(elementId)
+    let cardHeader = el
     
     let cardBody = cardHeader
         .parentElement
         .parentElement
-        .getElementsByClassName("d-flex")[0]
+        .getElementsByClassName("card-body-for-toggle")[0]
         
     const currentDisplay = cardBody.style.display
     
@@ -19,13 +19,12 @@ let toggleCardBody = (elementId) => {
 }
 
 function listenForCardBodyToggle(el) {
-    el.addEventListener('click', () => toggleCardBody(el.id))
+    el.addEventListener('click', () => toggleCardBody(el))
 }
 
 
 function cardBodyGlobalListener() {
     const cardHeaderToggles = document.getElementsByClassName('card-header-toggle')
-    // console.log(cardHeaderToggles)
     
     for (const child of cardHeaderToggles) {
         listenForCardBodyToggle(child)
@@ -39,4 +38,3 @@ document.addEventListener('shiny:connected', function(event) {
 window.addEventListener('load', function(event) {
     cardBodyGlobalListener()
 })
-
