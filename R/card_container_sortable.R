@@ -20,28 +20,31 @@ card_container_sortable <- function(sortable_id = NULL,
                                     ..., 
                                     group_name = "sortGroup1", 
                                     title = NULL, icon = NULL, pull = TRUE, 
-                                    put = TRUE, sort = TRUE) {
-    header <- if (!is.null(title) & !is.null(icon)) {
-        card_header(
-            inline_description(icon, title)
-        )
-    } else if (!is.null(title)) {
-        card_header(
-            card_title(title)
-        )
-    } else {
-        NULL
-    }
+                                    put = TRUE, sort = FALSE,
+                                    width = NULL, height = NULL) {
     
+    header <- card_container_header(title, icon)
     input_id <- paste0(sortable_id, "_elements")
+    
+    card_container <- card(
+        height = height,
+        class = "card-container-wrapper",
+        header,
+        card_body(
+            id = sortable_id,
+            class = "card-container-body",
+            ...
+        )
+    )
+    
+    card_container_modified <- 
+        tagQuery(card_container)$
+        find(".card-container-body")$
+        removeAttrs("style")$
+        allTags()
+
     tagList(
-        card(
-            header,
-            tags$div(
-                id = sortable_id,
-                ...
-            )
-        ),
+        card_container_modified,
         sortable_js(
             css_id = sortable_id,
             options = sortable_options(
@@ -56,4 +59,19 @@ card_container_sortable <- function(sortable_id = NULL,
             )
         )
     )
+}
+
+card_container_header <- function(title, icon) {
+    if (!is.null(title) & !is.null(icon)) {
+        card_header(
+            inline_description(icon, title)
+        )
+    } else if (!is.null(title)) {
+        card_header(
+            class = "card-container-header",
+            card_title(title)
+        )
+    } else {
+        NULL
+    }
 }
