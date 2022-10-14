@@ -2,7 +2,7 @@
 % Please edit documentation in R/bscard.R
 \name{task_card}
 \alias{task_card}
-\title{Second iteration of bscard}
+\title{Task card with custom elements}
 \usage{
 task_card(elementId = NULL)
 }
@@ -13,5 +13,5 @@ task_card(elementId = NULL)
 shiny.tag
 }
 \description{
-Second iteration of bscard
+Task card with custom elements
 }

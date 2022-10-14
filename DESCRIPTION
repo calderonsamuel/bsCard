@@ -11,7 +11,9 @@ BugReports: https://github.com/calderonsamuel/bsCard/issues
 Imports: 
     bsicons,
     bslib (>= 0.4.0.9000),
-    htmltools
+    cli,
+    htmltools,
+    ids
 Remotes: 
     rstudio/bslib@0ad454c
 Encoding: UTF-8

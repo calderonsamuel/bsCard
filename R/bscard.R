@@ -1,4 +1,4 @@
-#' Second iteration of bscard
+#' Task card with custom elements
 #'
 #' @param elementId id 
 #'

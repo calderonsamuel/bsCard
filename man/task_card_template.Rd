@@ -6,6 +6,7 @@
 \usage{
 task_card_template(
   elementId = NULL,
+  task_description = NULL,
   assignee = NULL,
   reviewer = NULL,
   date_due = NULL,
