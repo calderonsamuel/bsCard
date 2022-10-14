@@ -24,6 +24,7 @@ task_card_template <- function(elementId = NULL,
     card(
         id = card_id,
         `data-rank-id` = card_id,
+        style = "margin-top: 10px;",
         card_header(
             tags$a(
                 class = "btn card-header-toggle",
