@@ -1,4 +1,4 @@
-#' Template for bscard
+#' Template for task card
 #'
 #' @return shiny.tag
 #' @importFrom bslib card card_header card_body
@@ -6,7 +6,12 @@
 #' @import htmltools
 #' @export
 #'
-bscard_template <- function(width = NULL, height = NULL, elementId = NULL) {
+task_card_template <- function(elementId = NULL, 
+                            assignee = NULL,
+                            reviewer = NULL,
+                            date_due = NULL,
+                            process = NULL
+                            ) {
     card_id <- if (is.null(elementId)) ids::random_id() else elementId
     card(
         id = card_id,

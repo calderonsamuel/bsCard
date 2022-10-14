@@ -4,9 +4,9 @@
 #'
 #' @return shiny.tag
 #' @export
-bscard <- function(elementId = NULL) {
-    bscard_dep <- htmltools::htmlDependency(
-        name = "bscard", 
+task_card <- function(elementId = NULL) {
+    task_card_dep <- htmltools::htmlDependency(
+        name = "taskCard", 
         version = "0.0.0.9000", 
         src = system.file(package = "bsCard"), 
         script = "bscard.js"
@@ -14,8 +14,8 @@ bscard <- function(elementId = NULL) {
     )
     
     tag <- htmltools::tagList(
-        bscard_template(elementId = elementId),
-        bscard_dep
+        task_card_template(elementId = elementId),
+        task_card_dep
     )
     
     htmltools::browsable(tag)
