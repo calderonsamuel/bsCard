@@ -7,12 +7,14 @@
 #' @export
 #'
 bscard_template <- function(width = NULL, height = NULL, elementId = NULL) {
+    card_id <- if (is.null(elementId)) ids::random_id() else elementId
     card(
+        id = card_id,
         card_header(
             tags$a(
                 class = "btn card-header-toggle",
                 style = "width:100%; padding: 0;",
-                id = elementId,
+                id = paste0(card_id, "-header"),
                 tags$div(
                     style = "display: grid; grid-template-columns: auto auto; gap: 5px;",
                     tags$div(tags$p("Descripción de tarea", style = "margin-bottom: 0rem; text-align: left;")),
