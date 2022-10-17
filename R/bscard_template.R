@@ -6,13 +6,14 @@
 #' @import htmltools
 #' @export
 #'
-task_card_template <- function(elementId = NULL, 
+task_card_template <- function(elementId = NULL,
                                task_description = NULL,
-                            assignee = NULL,
-                            reviewer = NULL,
-                            date_due = NULL,
-                            process = NULL
-                            ) {
+                               assignee = NULL,
+                               reviewer = NULL,
+                               date_due = NULL,
+                               process = NULL,
+                               bg = "white") {
+    
     
     card_id <- if (is.null(elementId)) ids::random_id() else elementId
     task_description <- check_task_description(task_description)
@@ -21,10 +22,18 @@ task_card_template <- function(elementId = NULL,
     date_due <- check_task_date(date_due)
     process <- check_process(process)
     
+    custom_card_style <- css(
+        `background-color` = bg
+    )
+    
+    custom_body_style <- css(
+        display = "none !important"
+    )
+    
     card(
         id = card_id,
         `data-rank-id` = card_id,
-        style = "margin-top: 10px;",
+        style = custom_card_style,
         card_header(
             tags$a(
                 class = "btn card-header-toggle",
@@ -39,7 +48,7 @@ task_card_template <- function(elementId = NULL,
         ),
         card_body(
             class = "card-body-for-toggle",
-            style = "display: none !important;",
+            style = custom_body_style,
             inline_description("person", assignee),
             inline_description("stoplights", reviewer),
             inline_description("calendar4-event", date_due),

@@ -64,6 +64,7 @@ card_container_sortable <- function(sortable_id = NULL,
 card_container_header <- function(title, icon) {
     if (!is.null(title) & !is.null(icon)) {
         card_header(
+            class = "card-container-header",
             inline_description(icon, title)
         )
     } else if (!is.null(title)) {
