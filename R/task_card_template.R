@@ -1,10 +1,17 @@
 #' Template for task card
 #'
-#' @return shiny.tag
+#' @param elementId HTML id of the card
+#' @param task_description Description of the task
+#' @param assignee Person. Task assignee
+#' @param reviewer Person. Task reviewer. Typically a boss.
+#' @param date_due The maximum date for task completion
+#' @param process The process the task is an item of.
+#' @param bg Background color of the HTML card. For a complete list see  `get_task_card_colors()`
 #' @importFrom bslib card card_header card_body
 #' @importFrom bsicons bs_icon
 #' @import htmltools
 #' @export
+#' @return shiny.tag
 #'
 task_card_template <- function(elementId = NULL,
                                task_description = NULL,
@@ -44,7 +51,7 @@ task_card_template <- function(elementId = NULL,
             inline_description("stoplights", reviewer),
             inline_description("calendar4-event", date_due),
             inline_description("diagram-2", process),
-            actionButton(paste0(card_id, "_delete"), "Eliminar", class = "btn-sm mt-2 task-card-btn-delete")
+            tags$button(paste0(card_id, "_delete"), "Eliminar", class = "btn-sm mt-2 task-card-btn-delete")
         ),
     )
 }

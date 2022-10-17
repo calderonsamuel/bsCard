@@ -10,8 +10,11 @@
 #' @param icon Icon for the container header
 #' @param pull sortable group option. ability to move from the list.
 #' @param put sortable group option. whether elements can be added from other lists
-#' @importFrom sortable sortable_options sortable_js_capture_input sortable_js
+#' @param width css property
+#' @param height css property
 #' @inheritParams sortable::sortable_options 
+#' @importFrom sortable sortable_options sortable_js_capture_input sortable_js
+#' @importFrom bslib card_title
 #'
 #' @return A taglist with a container for sortable elements
 #' @export

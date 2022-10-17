@@ -12,7 +12,9 @@ card_container_sortable(
   icon = NULL,
   pull = TRUE,
   put = TRUE,
-  sort = TRUE
+  sort = FALSE,
+  width = NULL,
+  height = NULL
 )
 }
 \arguments{
@@ -31,6 +33,10 @@ card_container_sortable(
 \item{put}{sortable group option. whether elements can be added from other lists}
 
 \item{sort}{Boolean that allows sorting inside a list. [\code{TRUE}]}
+
+\item{width}{css property}
+
+\item{height}{css property}
 }
 \value{
 A taglist with a container for sortable elements

@@ -1,7 +1,6 @@
 #' Task card with custom elements
 #'
-#' @param elementId id 
-#'
+#' @inheritParams task_card_template
 #' @return shiny.tag
 #' @export
 task_card <- function(elementId = NULL,
@@ -15,7 +14,7 @@ task_card <- function(elementId = NULL,
     
     task_card_deps <- htmltools::htmlDependency(
         name = "taskCard", 
-        version = "0.0.0.9000", 
+        version = "0.1.0", 
         src = system.file(package = "bsCard"), 
         script = "taskCard.js",
         stylesheet = "taskCard.css"
@@ -39,6 +38,10 @@ task_card <- function(elementId = NULL,
     htmltools::browsable(tag)
 }
 
+#' Background colors for task cards
+#'
+#' @return named chr vector
+#' @export
 get_task_card_colors <- function() {
     c(
         white = "#FFFFFF",

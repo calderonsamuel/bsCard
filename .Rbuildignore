@@ -1,5 +1,5 @@
 ^renv$
 ^renv\.lock$
-^bsCard\.Rproj$
+^taskCard\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$

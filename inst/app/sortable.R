@@ -1,6 +1,6 @@
 library(shiny)
 library(bslib)
-library(bsCard)
+library(taskCard)
 
 my_theme <- bs_theme(
     version = 5, 
@@ -103,7 +103,8 @@ server <- function(input, output) {
         en_proceso = input$en_proceso_elements,
         pausado = input$pausado_elements,
         en_revision = input$en_revision_elements,
-        observado = input$observado_elements
+        observado = input$observado_elements,
+        task_to_delete = input$task_card_to_delete
     ))
     
 }
