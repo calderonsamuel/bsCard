@@ -1,0 +1,63 @@
+/* Task bg colors*/
+
+.task-bg-white {
+    background-color: #FFFFFF;
+}
+
+.task-bg-cyan {
+    background-color: #8DD3C7;
+}
+
+.task-bg-pale {
+    background-color: #FFFFB3;
+}
+
+.task-bg-lilac {
+    background-color: #BEBADA;
+}
+
+.task-bg-red {
+    background-color: #FB8072;
+}
+
+.task-bg-blue {
+    background-color: #80B1D3;
+}
+
+.task-bg-orange {
+    background-color: #FDB462;
+}
+
+.task-bg-green {
+    background-color: #B3DE69;
+}
+
+.task-bg-pink {
+    background-color: #FCCDE5;
+}
+
+.task-bg-grey {
+    background-color: #D9D9D9;
+}
+
+.task-bg-purple {
+    background-color: #BC80BD;
+}
+
+.task-bg-palegreen {
+    background-color: #CCEBC5;
+}
+
+.task-bg-yellow {
+    background-color: #FFED6F;
+}
+
+/* Task card styles */
+
+.card-container-body {
+    overflow-y: auto;
+}
+
+.card-container-wrapper {
+    margin-bottom: 1vh;
+}

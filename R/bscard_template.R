@@ -38,7 +38,8 @@ task_card_template <- function(elementId = NULL,
     card(
         id = card_id,
         `data-rank-id` = card_id,
-        style = custom_card_style,
+        class = paste0("task-bg-", bg),
+        # style = custom_card_style,
         card_header(
             style = custom_header_style,
             tags$a(
@@ -58,13 +59,20 @@ task_card_template <- function(elementId = NULL,
             inline_description("person", assignee),
             inline_description("stoplights", reviewer),
             inline_description("calendar4-event", date_due),
-            inline_description("diagram-2", process)
+            inline_description("diagram-2", process),
+            actionButton(paste0(card_id, "_delete"), "Eliminar")
         ),
     )
 }
 
 
 inline_description <- function(icon_name, label) {
+    custom_css_div <- css(
+        display = "grid",
+        `grid-template-columns` = "20px auto",
+        gap = "5px",
+        width = "100%"
+    )
     tags$div(
         style = "display: grid; grid-template-columns: 20px auto; gap: 5px; width: 100%;",
         tags$div(tags$p(bs_icon(icon_name, size = "1.1rem"), style = "margin-bottom: 0rem; text-align: left;")),
