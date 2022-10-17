@@ -5,12 +5,12 @@ let toggleCardBody = (el) => {
     let cardBody = cardHeader
         .parentElement
         .parentElement
-        .getElementsByClassName("card-body-for-toggle")[0]
+        .getElementsByClassName("task-card-body")[0]
         
     const currentDisplay = cardBody.style.display
     
-    if (currentDisplay === 'none') {
-        cardBody.style.setProperty('display', '', 'important')
+    if (currentDisplay === 'none' || currentDisplay === '') {
+        cardBody.style.setProperty('display', 'block', 'important')
     } else {
         cardBody.style.setProperty('display', 'none', 'important')
     }
