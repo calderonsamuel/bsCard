@@ -17,7 +17,7 @@ You can install the development version of taskCard from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("calderonsamuel/bsCard")
+devtools::install_github("calderonsamuel/taskCard")
 ```
 
 ## Example
