@@ -3,7 +3,6 @@
 export(card_container_sortable)
 export(get_task_card_colors)
 export(task_card)
-export(task_card_template)
 import(htmltools)
 importFrom(bsicons,bs_icon)
 importFrom(bslib,card)

@@ -10,7 +10,6 @@
 #' @importFrom bslib card card_header card_body
 #' @importFrom bsicons bs_icon
 #' @import htmltools
-#' @export
 #' @return shiny.tag
 #'
 task_card_template <- function(elementId = NULL,
