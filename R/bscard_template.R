@@ -26,8 +26,13 @@ task_card_template <- function(elementId = NULL,
         `background-color` = bg
     )
     
+    custom_header_style <- css(
+        `background-color`= "rgb(255 255 255 / 0%)"
+    )
+    
     custom_body_style <- css(
-        display = "none !important"
+        display = "none !important",
+        `background-color`= "rgb(255 255 255 / 33%)"
     )
     
     card(
@@ -35,6 +40,7 @@ task_card_template <- function(elementId = NULL,
         `data-rank-id` = card_id,
         style = custom_card_style,
         card_header(
+            style = custom_header_style,
             tags$a(
                 class = "btn card-header-toggle",
                 style = "width:100%; padding: 0;",
