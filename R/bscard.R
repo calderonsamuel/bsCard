@@ -21,8 +21,6 @@ task_card <- function(elementId = NULL,
         stylesheet = "taskCard.css"
     )
     
-    bg_color <- c("white", "cyan", "pale", "lilac", "red", "blue", "orange")
-    
     task_card <- task_card_template(
         elementId = elementId,
         task_description = task_description,
@@ -30,7 +28,7 @@ task_card <- function(elementId = NULL,
         reviewer = reviewer,
         date_due = date_due,
         process = process,
-        bg = sample(bg_color, 1)
+        bg = sample(get_task_card_colors(), 1)
     )
     
     tag <- htmltools::tagList(
@@ -39,4 +37,22 @@ task_card <- function(elementId = NULL,
     )
     
     htmltools::browsable(tag)
+}
+
+get_task_card_colors <- function() {
+    c(
+        white = "#FFFFFF",
+        cyan = "#8DD3C7",
+        pale = "#FFFFB3",
+        lilac = "#BEBADA",
+        red = "#FB8072",
+        blue = "#80B1D3",
+        orange = "#FDB462",
+        green = "#B3DE69",
+        pink = "#FCCDE5",
+        grey = "#D9D9D9",
+        purple = "#BC80BD",
+        palegreen = "#CCEBC5",
+        yellow = "#FFED6F"
+    )
 }
