@@ -2,8 +2,14 @@ library(shiny)
 library(bslib)
 library(bsCard)
 
+my_theme <- bs_theme(
+    version = 5, 
+    bootswatch = "minty"
+)
+
 ui <- page_navbar(
     title = "Test page",
+    theme = my_theme,
     tags$head(
         tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
     ),
