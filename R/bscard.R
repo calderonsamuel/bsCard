@@ -54,5 +54,6 @@ get_task_card_colors <- function() {
         purple = "#BC80BD",
         palegreen = "#CCEBC5",
         yellow = "#FFED6F"
-    )
+    ) |> 
+        names()
 }
