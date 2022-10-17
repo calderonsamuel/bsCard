@@ -14,7 +14,7 @@ task_card <- function(elementId = NULL,
                       ) {
     
     task_card_deps <- htmltools::htmlDependency(
-        name = "taskCardJS", 
+        name = "taskCard", 
         version = "0.0.0.9000", 
         src = system.file(package = "bsCard"), 
         script = "taskCard.js",
