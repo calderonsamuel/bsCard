@@ -1,3 +1,5 @@
+/* Scrollbar ----
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -14,12 +16,3 @@
   background: #999; 
 }
 
-
-
-.card-container-body {
-    overflow-y: auto;
-}
-
-.card-container-wrapper {
-    margin-bottom: 1vh;
-}

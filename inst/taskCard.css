@@ -54,6 +54,62 @@
 
 /* Task card styles */
 
+.task-card-header {
+    background-color: rgb(255 255 255 / 0%);
+}
+
+.task-card-body {
+    display: none;
+    background-color: rgb(255 255 255 / 33%);
+}
+
+.card-header-toggle {
+    width: 100%;
+    padding: 0;
+}
+
+.task-card-header-text {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.task-card-header-description {
+    margin-bottom: 0rem;
+    text-align: left;
+}
+
+.task-card-header-icon {
+    margin-bottom: 0rem;
+    text-align: right;
+}
+
+.task-card-btn-delete {
+    /*margin-top: 1.2rem;
+    font-size: small;*/
+}
+
+.task-card-body-inline {
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 5px;
+    width: 100%;
+}
+
+.task-card-body-inline-icon {
+    margin-bottom: 0rem; 
+    text-align: left;
+}
+
+.task-card-body-inline-label {
+    margin-bottom: 0rem; 
+    text-align: left;
+}
+
+
+
+/* Task card container styles */
+
 .card-container-body {
     overflow-y: auto;
 }
