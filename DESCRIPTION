@@ -9,14 +9,15 @@ License: MIT + file LICENSE
 URL: https://github.com/calderonsamuel/bsCard
 BugReports: https://github.com/calderonsamuel/bsCard/issues
 Imports: 
-    bsicons,
+    bsicons (>= 0.0.0.9000),
     bslib (>= 0.4.0.9000),
     cli,
     htmltools,
     ids,
     sortable
-Remotes: 
-    rstudio/bslib@0ad454c
+Remotes:  
+    rstudio/bslib@b8c96dd,
+    rstudio/bsicons@9d8d64a
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1

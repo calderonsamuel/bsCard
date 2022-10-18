@@ -77,9 +77,9 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "rstudio",
       "RemoteRepo": "bsicons",
-      "RemoteRef": "main",
+      "RemoteRef": "9d8d64a3b78f1f8d5c21e7979f381904aa4475d3",
       "RemoteSha": "9d8d64a3b78f1f8d5c21e7979f381904aa4475d3",
-      "Hash": "ea1dc2543fa43500c7aaffd3572434b5",
+      "Hash": "fa980f8b7edc3fdc245e03530b078162",
       "Requirements": []
     },
     "bslib": {
@@ -90,10 +90,10 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "rstudio",
       "RemoteRepo": "bslib",
-      "RemoteRef": "dev",
+      "RemoteRef": "b8c96dd62af0ae796b2ff01f289751711e1e5abc",
       "RemoteSha": "b8c96dd62af0ae796b2ff01f289751711e1e5abc",
       "Remotes": "rstudio/bsicons, ramnathv/htmlwidgets",
-      "Hash": "ac232ef2d5c93d24275017b4d8078429",
+      "Hash": "884d63f7949e66682208add588158782",
       "Requirements": []
     },
     "cachem": {
