@@ -50,7 +50,7 @@ task_card_template <- function(elementId = NULL,
             inline_description("stoplights", reviewer),
             inline_description("calendar4-event", date_due),
             inline_description("diagram-2", process),
-            tags$button(paste0(card_id, "_delete"), "Eliminar", class = "btn-sm mt-2 task-card-btn-delete")
+            tags$button(id = paste0(card_id, "_delete"), "Eliminar", class = "btn btn-danger btn-sm mt-2 task-card-btn-delete")
         ),
     )
 }
