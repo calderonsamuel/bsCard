@@ -38,11 +38,10 @@ function cardBodyGlobalListener() {
 
 function setTaskForDeleting() {
     let btns = document.getElementsByClassName('task-card-btn-delete')
-    const regex = /[0-9a-f]{32}/ 
     
     for (const btn of btns) {
         btn.addEventListener('click', (event) => {
-            Shiny.setInputValue("task_card_to_delete", btn.id.match(regex) , {priority: "event"});
+            Shiny.setInputValue("task_card_to_delete", btn.attributes.task_id.value, {priority: "event"});
         })
     }
 }
