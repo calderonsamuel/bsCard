@@ -1,3 +1,7 @@
+# taskCard 0.1.2
+
+- Fixed a bug in the task for deleting listener
+
 # taskCard 0.1.1
 
 - Use HTML dependency as function.
