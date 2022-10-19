@@ -12,13 +12,7 @@ task_card <- function(elementId = NULL,
                       bg = "white"
                       ) {
     
-    task_card_deps <- htmltools::htmlDependency(
-        name = "taskCard", 
-        version = "0.1.0", 
-        src = system.file(package = "taskCard"), 
-        script = "taskCard.js",
-        stylesheet = "taskCard.css"
-    )
+    task_card_deps <- task_card_dependency()
     
     task_card <- task_card_template(
         elementId = elementId,
@@ -59,4 +53,14 @@ get_task_card_colors <- function() {
         yellow = "#FFED6F"
     ) |> 
         names()
+}
+
+task_card_dependency <- function() {
+  htmltools::htmlDependency(
+    name = "taskCard", 
+    version = "0.1.0", 
+    src = system.file(package = "taskCard"), 
+    script = "taskCard.js",
+    stylesheet = "taskCard.css"
+  )
 }
