@@ -1,6 +1,6 @@
 Package: taskCard
 Title: HTML card for task management
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Samuel", "Calderon", , "samuel.calderon@uarm.pe", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-6847-1210"))
@@ -15,7 +15,7 @@ Imports:
     htmltools,
     ids,
     sortable
-Remotes:  
+Remotes: 
     rstudio/bslib@b8c96dd,
     rstudio/bsicons@9d8d64a
 Encoding: UTF-8

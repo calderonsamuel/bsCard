@@ -1,3 +1,7 @@
+# taskCard 0.1.1
+
+- Use HTML dependency as function.
+
 # taskCard 0.1.0
 
 - Export `task_card()` as a high level function for creation of a BS5 card best suited for a to do app.
